@@ -12,6 +12,26 @@ function stanford_landing_page_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'field_collection_item|field_landing_page_item|large_landscape';
+  $ds_fieldsetting->entity_type = 'field_collection_item';
+  $ds_fieldsetting->bundle = 'field_landing_page_item';
+  $ds_fieldsetting->view_mode = 'large_landscape';
+  $ds_fieldsetting->settings = array(
+    'tile_display_image' => array(
+      'weight' => '14',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'tile_display_title' => array(
+      'weight' => '15',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['field_collection_item|field_landing_page_item|large_landscape'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'field_collection_item|field_landing_page_item|stanford_4_col_header';
   $ds_fieldsetting->entity_type = 'field_collection_item';
   $ds_fieldsetting->bundle = 'field_landing_page_item';
@@ -32,6 +52,26 @@ function stanford_landing_page_ds_field_settings_info() {
     ),
   );
   $export['field_collection_item|field_landing_page_item|stanford_4_col_header'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'field_collection_item|field_landing_page_item|stanford_medium_square';
+  $ds_fieldsetting->entity_type = 'field_collection_item';
+  $ds_fieldsetting->bundle = 'field_landing_page_item';
+  $ds_fieldsetting->view_mode = 'stanford_medium_square';
+  $ds_fieldsetting->settings = array(
+    'list_display_image' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'tile_display_title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['field_collection_item|field_landing_page_item|stanford_medium_square'] = $ds_fieldsetting;
 
   return $export;
 }
@@ -177,24 +217,28 @@ function stanford_landing_page_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_s_lp_item_title',
-        1 => 'field_s_lp_item_image',
-        2 => 'field_s_lp_item_description',
-        3 => 'field_s_lp_item_link',
+        0 => 'group_tile_style',
+        1 => 'group_s_tile_link_style',
+        2 => 'tile_display_image',
+        3 => 'tile_display_title',
+        4 => 'field_s_lp_item_description',
       ),
     ),
     'fields' => array(
-      'field_s_lp_item_title' => 'ds_content',
-      'field_s_lp_item_image' => 'ds_content',
+      'group_tile_style' => 'ds_content',
+      'group_s_tile_link_style' => 'ds_content',
+      'tile_display_image' => 'ds_content',
+      'tile_display_title' => 'ds_content',
       'field_s_lp_item_description' => 'ds_content',
-      'field_s_lp_item_link' => 'ds_content',
     ),
     'classes' => array(),
-    'wrappers' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
-    'layout_attributes_merge' => TRUE,
-    'layout_link_attribute' => FALSE,
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
     'layout_link_custom' => '',
   );
   $export['field_collection_item|field_landing_page_item|large_landscape'] = $ds_layout;
@@ -236,6 +280,48 @@ function stanford_landing_page_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['field_collection_item|field_landing_page_item|stanford_4_col_header'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'field_collection_item|field_landing_page_item|stanford_medium_square';
+  $ds_layout->entity_type = 'field_collection_item';
+  $ds_layout->bundle = 'field_landing_page_item';
+  $ds_layout->view_mode = 'stanford_medium_square';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'tile_display_title',
+        1 => 'group_s_postcard',
+        2 => 'list_display_image',
+        3 => 'field_s_lp_item_link',
+        4 => 'field_s_lp_item_description',
+        5 => 'group_s_more_link_style',
+        6 => 'group_s_postcard_image',
+        7 => 'group_s_postcard_content',
+      ),
+    ),
+    'fields' => array(
+      'tile_display_title' => 'ds_content',
+      'group_s_postcard' => 'ds_content',
+      'list_display_image' => 'ds_content',
+      'field_s_lp_item_link' => 'ds_content',
+      'field_s_lp_item_description' => 'ds_content',
+      'group_s_more_link_style' => 'ds_content',
+      'group_s_postcard_image' => 'ds_content',
+      'group_s_postcard_content' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+  );
+  $export['field_collection_item|field_landing_page_item|stanford_medium_square'] = $ds_layout;
 
   return $export;
 }

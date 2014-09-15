@@ -29,7 +29,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 16,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
@@ -64,7 +64,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'stanford_tiles' => array(
         'label' => 'hidden',
@@ -137,13 +137,9 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'large_landscape' => array(
         'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
@@ -183,13 +179,9 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'stanford_medium_square' => array(
         'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'stanford_tiles' => array(
         'label' => 'hidden',
@@ -289,10 +281,9 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'large_landscape' => array(
         'label' => 'hidden',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 3,
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
@@ -327,7 +318,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'stanford_tiles' => array(
         'label' => 'hidden',
@@ -386,10 +377,9 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'large_landscape' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
@@ -420,10 +410,9 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'stanford_medium_square' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'stanford_tiles' => array(
         'label' => 'above',
@@ -533,7 +522,7 @@ function stanford_landing_page_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
-          'view_mode' => 'stanford_4_col_header',
+          'view_mode' => 'stanford_medium_square',
         ),
         'type' => 'field_collection_fields',
         'weight' => 3,
