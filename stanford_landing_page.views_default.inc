@@ -287,12 +287,6 @@ function stanford_landing_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_landing_page_layout']['id'] = 'field_s_landing_page_layout';
   $handler->display->display_options['fields']['field_s_landing_page_layout']['table'] = 'field_data_field_s_landing_page_layout';
   $handler->display->display_options['fields']['field_s_landing_page_layout']['field'] = 'field_s_landing_page_layout';
-  /* Field: Content: Has new content */
-  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['table'] = 'history';
-  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['label'] = '';
-  $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
   /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
