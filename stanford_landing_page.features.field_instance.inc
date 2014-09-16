@@ -507,7 +507,7 @@ function stanford_landing_page_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -589,7 +589,7 @@ function stanford_landing_page_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -617,7 +617,7 @@ function stanford_landing_page_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_s_landing_page_layout',
     'label' => 'Layout',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -626,7 +626,7 @@ function stanford_landing_page_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 1,
     ),
   );
 
@@ -651,6 +651,7 @@ function stanford_landing_page_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_s_landing_page_lead_text',
     'label' => 'Lead text',
@@ -689,10 +690,10 @@ function stanford_landing_page_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 150,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
