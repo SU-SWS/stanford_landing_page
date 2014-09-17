@@ -8,6 +8,18 @@ include_once 'stanford_landing_page.features.inc';
 
 
 /**
+ * Implements hook_preprocess().
+ */
+function stanford_landing_page_preprocess_node(&$vars) {
+
+  if ($vars["type"] == "stanford_landing_page") {
+    // add display mode machine-name
+    $vars['classes_array'][] = drupal_clean_css_identifier($vars['field_s_landing_page_layout'][LANGUAGE_NONE][0]['value']);
+  }
+
+}
+
+/**
  * Implements hook_entity_info_alter().
  */
 function stanford_landing_page_entity_info_alter(&$entity_info) {
@@ -41,3 +53,5 @@ class FieldCollectionViewMode extends FieldCollectionItemEntity {
     return parent::view($view_mode, $langcode, $page);
   }
 }
+
+

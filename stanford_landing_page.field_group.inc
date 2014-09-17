@@ -86,7 +86,7 @@ function stanford_landing_page_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_s_lp_item_description',
-      1 => 'stanford_display_image',
+      1 => 'field_s_lp_item_image',
       2 => 'stanford_display_title',
       3 => 'group_s_more_link_style',
     ),
@@ -181,7 +181,7 @@ function stanford_landing_page_field_group_info() {
   $field_group->parent_name = 'group_s_block_style';
   $field_group->data = array(
     'label' => 'More LInk Style',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_s_lp_item_link',
     ),
@@ -278,7 +278,7 @@ function stanford_landing_page_field_group_info() {
     'label' => 'Postcard Image',
     'weight' => '11',
     'children' => array(
-      0 => 'list_display_image',
+      0 => 'field_s_lp_item_image',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -309,8 +309,8 @@ function stanford_landing_page_field_group_info() {
     'label' => 'Postcard',
     'weight' => '0',
     'children' => array(
-      0 => 'group_s_postcard_image',
-      1 => 'group_s_postcard_content',
+      0 => 'group_s_postcard_content',
+      1 => 'group_s_postcard_image',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -341,7 +341,7 @@ function stanford_landing_page_field_group_info() {
     'label' => 'Tile Link Style',
     'weight' => '13',
     'children' => array(
-      0 => 'tile_display_image',
+      0 => 'field_s_lp_item_image',
       1 => 'tile_display_title',
     ),
     'format_type' => 'div',
