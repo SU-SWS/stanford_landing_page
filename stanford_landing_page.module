@@ -11,12 +11,12 @@ include_once 'stanford_landing_page.features.inc';
  * Implements hook_preprocess().
  */
 function stanford_landing_page_preprocess_node(&$vars) {
-
   if ($vars["type"] == "stanford_landing_page") {
     // add display mode machine-name
     $vars['classes_array'][] = drupal_clean_css_identifier($vars['field_s_landing_page_layout'][LANGUAGE_NONE][0]['value']);
   }
 
+  // $vars['content']['field_landing_page_item']['#attributes']['class'] = array("row");
 }
 
 /**
@@ -28,6 +28,34 @@ function stanford_landing_page_entity_info_alter(&$entity_info) {
   $entity_info['field_collection_item']['entity class'] = 'FieldCollectionViewMode';
   $entity_info['field_collection_item']['view modes'] += variable_get('field_collection_view_modes', array());
 }
+
+/**
+ * [stanford_landing_page_preprocess_entity description]
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ */
+function stanford_landing_page_preprocess_entity(&$vars) {
+  // $args = func_get_args();
+  // dpm($args);
+
+  // if ($vars['elements']['#bundle'] == "field_landing_page_item") {
+  //   $vars['classes_array'][] = "span4";
+  // }
+}
+
+/**
+ * [stanford_landing_page_preprocess_field description]
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ */
+function stanford_landing_page_preprocess_field(&$vars) {
+  if ($vars['element']['#field_name'] == "field_landing_page_item") {
+    $view_mode = $vars['#object']['field_s_landing_page_layout'][LANGUAGE_NONE][0]['value'];
+    $vars['classes_array'][] = drupal_clean_css_identifier($view_mode . "-view-mode");
+    // $vars['classes_array'][] = "row";
+  }
+}
+
 
 
 /**

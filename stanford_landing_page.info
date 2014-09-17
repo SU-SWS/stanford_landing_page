@@ -74,3 +74,4 @@ features[variable][] = node_preview_stanford_landing_page
 features[variable][] = node_submitted_stanford_landing_page
 features[views_view][] = landing_page_manage
 features_exclude[field_base][body] = body
+# stylesheets[all][] = css/stanford_landing_page.css
