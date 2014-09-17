@@ -94,7 +94,7 @@ function stanford_landing_page_field_group_info() {
     'format_settings' => array(
       'label' => 'Block Style',
       'instance_settings' => array(
-        'classes' => 'well span4',
+        'classes' => 'well',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -380,7 +380,7 @@ function stanford_landing_page_field_group_info() {
     'format_settings' => array(
       'label' => 'Tile Style',
       'instance_settings' => array(
-        'classes' => 'span4 tile',
+        'classes' => 'tile',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
