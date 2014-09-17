@@ -154,9 +154,19 @@ function stanford_landing_page_fc_link_formatter_image_field_link_types($instanc
  * @return [type]             [description]
  */
 function stanford_landing_page_fc_link_formatter_form_alter(&$form, &$form_state, $form_id) {
-  if($form_id == 'field_ui_display_overview_form' && $form['#entity_type'] !== 'field_collection_item'){
+
+  if ($form_id == 'field_ui_display_overview_form' && $form['#bundle'] !== 'field_landing_page_item'){
+
+    // Remove option from non field_landing_page_item items
+    foreach ($form['#fields'] as $k => $field_name) {
+      if (isset($form['fields'][$field_name]['format']['type']['#options']['stanford_landing_page_fc_link_formatter'])) {
+        unset($form['fields'][$field_name]['format']['type']['#options']['stanford_landing_page_fc_link_formatter']);
+      }
+    }
+
     $form['#validate'][] = "stanford_landing_page_fc_link_field_collection_formatter_validate";
   }
+
 }
 
 /**
@@ -169,7 +179,7 @@ function stanford_landing_page_fc_link_field_collection_formatter_validate($form
   if(isset($form_state['values'])){
     foreach($form_state['values']['fields'] as $field){
       if($field['type'] == 'stanford_landing_page_fc_link_formatter'){
-        form_set_error('field-ui-display-overview-form',t('This formatter is available only for image field collection item'));
+        form_set_error('field-ui-display-overview-form',t('This formatter is available only for field_landing_page_item field collection item'));
       }
     }
   }
