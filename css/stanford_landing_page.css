@@ -1,6 +1,3 @@
-/**
- * Your Styles Here
- */
 /* Default styles for Landing Page content type */
 
 .content-body .field.field-name-field-s-lp-item-link,
@@ -88,30 +85,4 @@
 /* Blocks view mode */
 .node-type-stanford-landing-page .view-mode-stanford_4_col_header .field.field-name-stanford-display-title h2 {
     text-transform: uppercase;
-}
-
-/* Tiles view mode */
-.tile-link {
-    margin-bottom: 1em;
-    background: #8c1515;
-}
-.tile-link h2 {
-    margin-bottom: 0;
-}
-.tile-link h2 a {
-    display: block;
-    padding: 0.5em 0.75em;
-    color: #fff;
-}
-.tile-link h2 a:hover, .tile-link h2 a:focus {
-    color: #fff;
-}
-.tile-link:hover, .tile-link:focus {
-    cursor: pointer;
-    opacity: 0.8;
-}
-.content-body .tile-link .field.field-name-tile-display-image,
-.content-body .tile-link .field.field-name-tile-display-title,
-.content-body .tile-link .field.field-name-field-s-lp-item-image {
-    margin-bottom: 0;
 }
