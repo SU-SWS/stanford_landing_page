@@ -29,6 +29,10 @@ function stanford_landing_page_node_convert_form_node_form_alter(&$form, &$form_
     return;
   }
 
+  if (!isset($form['nid']) || !is_numeric($form['nid']['#value'])) {
+    return;
+  }
+
   // Add a vertical tab and button to the page.
   $form['slpnc'] = array(
     '#type' => 'fieldset',
