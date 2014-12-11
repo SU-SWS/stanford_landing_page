@@ -1,0 +1,160 @@
+<?php
+/**
+ * @file
+ * Provides a better UX for converting stanford page types to landing page.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function stanford_landing_page_node_convert_menu() {
+  $items['admin/stanford/convert/%/%'] = array(
+    'title' => 'Convert node',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('stanford_landing_page_node_convert_form_confirm_form', 3, 4),
+    'access arguments' => array('administer content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function stanford_landing_page_node_convert_form_node_form_alter(&$form, &$form_state, $form_id) {
+
+  // We only want stanford_page type.
+  if ($form_id !== "stanford_page_node_form") {
+    return;
+  }
+
+  // Add a vertical tab and button to the page.
+  $form['slpnc'] = array(
+    '#type' => 'fieldset',
+    '#title' => t("Convert node"),
+    '#description' => t("Convert this node to another type."),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+    '#group' => 'additional_settings',
+    '#weight' => 25,
+  );
+
+  $form['slpnc']['convert_to_lp'] = array(
+    '#type' => 'button',
+    '#value' => 'Convert to Stanford Landing Page',
+    '#description' => t('Convert this to a landing page.'),
+    '#submit' => array('stanford_landing_page_node_convert_form_confirm_form_goto'),
+    '#executes_submit_callback' => TRUE,
+  );
+
+}
+
+/**
+ * Goes to the confirm form for a conversion.
+ */
+function stanford_landing_page_node_convert_form_confirm_form_goto($form, &$form_state) {
+  $nid = $form['nid']['#value'];
+  $path = 'admin/stanford/convert/stanford_page_to_stanford_landing_page/' . $nid;
+  $form_state['redirect'] = array($path);
+  drupal_static_reset("drupal_get_destination");
+  $_GET['destination'] = $path;
+  drupal_redirect_form($form_state);
+}
+
+/**
+ * [stanford_landing_page_node_convert_form_confirm_form description]
+ * @param  [type] &$form       [description]
+ * @param  [type] &$form_state [description]
+ * @return [type]              [description]
+ */
+function stanford_landing_page_node_convert_form_confirm_form($form, &$form_state, $type, $nid) {
+  $form = array();
+  $question = t("Are you sure you want to convert this node to a landing page?");
+  $path = "node/" . $nid . "/edit";
+  $description = t("By confirming you will change this page into a landing page. Some information may be lost and this action cannot be undone.");
+  $yes = "Yes, please convert this node into a landing page";
+  $no = "No, I am not ready";
+  $name = "confirm_convert";
+
+  $form['convert_type'] = array(
+    "#type" => "value",
+    "#value" => $type,
+  );
+
+  $form['nid'] = array(
+    "#type" => "value",
+    "#value" => $nid,
+  );
+
+  return confirm_form($form, $question, $path, $description, $yes, $no, $name);
+}
+
+/**
+ * Confirmation action on converting.
+ */
+function stanford_landing_page_node_convert_form_confirm_form_submit($form, $form_state) {
+
+  $type = $form_state['values']['convert_type'];
+  $nid = $form_state['values']['nid'];
+  node_convert_convert_nodes_using_template(array($nid), $type);
+
+  // Make one small change to set the default layout.
+  $node = node_load($nid, NULL, TRUE);
+  $node->field_s_landing_page_layout[LANGUAGE_NONE][]['value'] = "stanford_4_col_header";
+  node_save($node);
+
+  drupal_goto("node/" . $nid . "/edit");
+}
+
+/**
+ * The template for converting to stanford_landing page.
+ * @return [type] [description]
+ */
+function stanford_landing_page_node_convert_get_template($type = "all") {
+  $export = array();
+
+  $template = array();
+  $template['machine_name'] = "stanford_page_to_stanford_landing_page";
+  $template['name'] = t("Stanford Page to Stanford Landing Page");
+  $template['source_type'] = "stanford_page";
+  $template['destination_type'] = "stanford_landing_page";
+  $template['data'] = array(
+    'fields' => array(
+      'source' => array(
+        0 => 'field_s_image_info',
+        1 => 'field_s_page_file',
+        2 => 'field_s_page_image_insert',
+        3 => 'body',
+        4 => 'field_stanford_subsite_sub_tags',
+        5 => 'field_s_page_manager_information',
+      ),
+      'destination' => array(
+        0 => 'field_s_image_info',
+        1 => 'discard',
+        2 => 'discard',
+        3 => 'body',
+        4 => 'field_stanford_subsite_sub_tags',
+        5 => 'append_to_body',
+      ),
+    ),
+    'hook_options' => NULL,
+    'no_fields' => FALSE,
+  );
+
+  $export['stanford_page_to_stanford_landing_page'] = $template;
+
+  // ---------------------------------------------------------------------------
+
+  if ($type !== "all" && isset($export[$type])) {
+    return $export['type'];
+  }
+
+  if ($type == "all") {
+    return $export;
+  }
+
+  return FALSE;
+}
+
+
