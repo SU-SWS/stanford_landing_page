@@ -12,7 +12,7 @@ function stanford_landing_page_node_convert_menu() {
     'title' => 'Convert node',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('stanford_landing_page_node_convert_form_confirm_form', 3, 4),
-    'access arguments' => array('administer content'),
+    'access arguments' => array('administer nodes'),
     'type' => MENU_CALLBACK,
   );
 
