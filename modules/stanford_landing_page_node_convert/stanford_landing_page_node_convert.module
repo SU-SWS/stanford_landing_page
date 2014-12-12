@@ -76,7 +76,7 @@ function stanford_landing_page_node_convert_form_confirm_form($form, &$form_stat
   $form = array();
   $question = t("Are you sure you want to convert this node to a landing page?");
   $path = "node/" . $nid . "/edit";
-  $description = t("By confirming you will change this page into a landing page. We've done our best to save your content, however uploaded files and images will be lost and some fields will be combined. This action cannot be undone.");
+  $description = t("By confirming you will change this page into a landing page.") . "<br />" . t("We've done our best to save your content, however uploaded files and images will be lost and some fields will be combined.") . "<br />" . t("This action cannot be undone.");
   $yes = t("Confirm");
   $no = t("Cancel");
   $name = "confirm_convert";
