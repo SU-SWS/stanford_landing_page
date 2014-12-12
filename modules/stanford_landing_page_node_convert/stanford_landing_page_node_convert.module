@@ -36,8 +36,8 @@ function stanford_landing_page_node_convert_form_node_form_alter(&$form, &$form_
   // Add a vertical tab and button to the page.
   $form['slpnc'] = array(
     '#type' => 'fieldset',
-    '#title' => t("Convert node"),
-    '#description' => t("Convert this node to another type."),
+    '#title' => t("Convert Page"),
+    '#description' => t("Convert this Page to a Landing Page."),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
     '#group' => 'additional_settings',
@@ -46,8 +46,8 @@ function stanford_landing_page_node_convert_form_node_form_alter(&$form, &$form_
 
   $form['slpnc']['convert_to_lp'] = array(
     '#type' => 'button',
-    '#value' => 'Convert to Stanford Landing Page',
-    '#description' => t('Convert this to a landing page.'),
+    '#value' => 'Convert Page',
+    '#description' => t('Convert this Page into a Landing Page.'),
     '#submit' => array('stanford_landing_page_node_convert_form_confirm_form_goto'),
     '#executes_submit_callback' => TRUE,
   );
@@ -76,9 +76,9 @@ function stanford_landing_page_node_convert_form_confirm_form($form, &$form_stat
   $form = array();
   $question = t("Are you sure you want to convert this node to a landing page?");
   $path = "node/" . $nid . "/edit";
-  $description = t("By confirming you will change this page into a landing page. Some information may be lost and this action cannot be undone.");
-  $yes = "Yes, please convert this node into a landing page";
-  $no = "No, I am not ready";
+  $description = t("By confirming you will change this page into a landing page. We've done our best to save your content, however uploaded files and images will be lost and some fields will be combined. This action cannot be undone.");
+  $yes = t("Confirm");
+  $no = t("Cancel");
   $name = "confirm_convert";
 
   $form['convert_type'] = array(
