@@ -789,43 +789,6 @@ function stanford_landing_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_landing_page-field_stanford_subsite_sub_tags'
-  $field_instances['node-stanford_landing_page-field_stanford_subsite_sub_tags'] = array(
-    'bundle' => 'stanford_landing_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter the value of the subsite.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_stanford_subsite_sub_tags',
-    'label' => 'Subsite Tags',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'options',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'options_select',
-      'weight' => 9,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Add an image associated with this landing page item.');
@@ -835,14 +798,12 @@ function stanford_landing_page_field_default_field_instances() {
   t('Description');
   t('Enter URL link to location(s) for this landing page item.');
   t('Enter a short lead sentence for this landing page.');
-  t('Enter the value of the subsite.');
   t('Image');
   t('Landing Page Item');
   t('Layout');
   t('Lead text');
   t('Link');
   t('Select the layout you want to use for this Landing Page.');
-  t('Subsite Tags');
   t('Title');
 
   return $field_instances;

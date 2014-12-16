@@ -187,24 +187,6 @@ function stanford_landing_page_strongarm() {
   $strongarm->name = 'menu_options_stanford_landing_page';
   $strongarm->value = array(
     0 => 'main-menu',
-    1 => 'testing-sub-site-name',
-    2 => 'benefits--rewards',
-    3 => 'benefits--rewards',
-    4 => 'learn--grow',
-    5 => 'manage--lead',
-    6 => 'one',
-    7 => 'two',
-    8 => 'one',
-    9 => 'one',
-    10 => 'one',
-    11 => 'benefits--rewards',
-    12 => 'learn--grow',
-    13 => 'welcome-center',
-    14 => 'learn--grow',
-    15 => 'benefits--rwards',
-    16 => 'two',
-    17 => 'manage--lead',
-    18 => 'learn--grow',
   );
   $export['menu_options_stanford_landing_page'] = $strongarm;
 
