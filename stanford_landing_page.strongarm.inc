@@ -94,11 +94,32 @@ function stanford_landing_page_strongarm() {
       'large_landscape' => array(
         'custom_settings' => TRUE,
       ),
+      'numbered_guide' => array(
+        'custom_settings' => TRUE,
+      ),
+      'stanford_12_col_banner_tall' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_6_col_photo_landscape' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_icon_profile' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_circles' => array(
+        'custom_settings' => FALSE,
+      ),
+      'caw_banner' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_callout_block' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'redirect' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -166,6 +187,24 @@ function stanford_landing_page_strongarm() {
   $strongarm->name = 'menu_options_stanford_landing_page';
   $strongarm->value = array(
     0 => 'main-menu',
+    1 => 'testing-sub-site-name',
+    2 => 'benefits--rewards',
+    3 => 'benefits--rewards',
+    4 => 'learn--grow',
+    5 => 'manage--lead',
+    6 => 'one',
+    7 => 'two',
+    8 => 'one',
+    9 => 'one',
+    10 => 'one',
+    11 => 'benefits--rewards',
+    12 => 'learn--grow',
+    13 => 'welcome-center',
+    14 => 'learn--grow',
+    15 => 'benefits--rwards',
+    16 => 'two',
+    17 => 'manage--lead',
+    18 => 'learn--grow',
   );
   $export['menu_options_stanford_landing_page'] = $strongarm;
 
