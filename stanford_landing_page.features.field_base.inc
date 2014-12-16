@@ -50,9 +50,11 @@ function stanford_landing_page_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'stanford_4_col_header' => 'Blocks',
-        'large_landscape' => 'Tiles',
         'stanford_medium_square' => 'List',
+        'stanford_4_col_header' => 'Blocks',
+        'large_landscape' => 'Cards',
+        'stanford_callout_block' => 'Callouts',
+        'numbered_guide' => 'Guide',
       ),
       'allowed_values_function' => '',
     ),

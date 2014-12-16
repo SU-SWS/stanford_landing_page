@@ -31,6 +31,13 @@ function stanford_landing_page_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 16,
       ),
+      'numbered_guide' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -51,6 +58,20 @@ function stanford_landing_page_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 7,
+      ),
+      'stanford_callout_block' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'stanford_circles' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'stanford_list' => array(
         'label' => 'hidden',
@@ -105,7 +126,7 @@ function stanford_landing_page_field_default_field_instances() {
           ),
         ),
       ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -115,7 +136,7 @@ function stanford_landing_page_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -144,6 +165,12 @@ function stanford_landing_page_field_default_field_instances() {
         ),
         'type' => 'stanford_landing_page_fc_link_formatter',
         'weight' => 5,
+      ),
+      'numbered_guide' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
@@ -174,6 +201,18 @@ function stanford_landing_page_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'stanford_callout_block' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'stanford_circles' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'stanford_list' => array(
         'label' => 'hidden',
@@ -273,7 +312,7 @@ function stanford_landing_page_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -297,6 +336,13 @@ function stanford_landing_page_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 7,
       ),
+      'numbered_guide' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 9,
+      ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
         'module' => 'link',
@@ -317,6 +363,19 @@ function stanford_landing_page_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 4,
+      ),
+      'stanford_callout_block' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 1,
+      ),
+      'stanford_circles' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
       ),
       'stanford_list' => array(
         'label' => 'hidden',
@@ -345,6 +404,7 @@ function stanford_landing_page_field_default_field_instances() {
     'label' => 'Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -358,6 +418,7 @@ function stanford_landing_page_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -369,7 +430,7 @@ function stanford_landing_page_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -393,6 +454,13 @@ function stanford_landing_page_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 6,
       ),
+      'numbered_guide' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -412,6 +480,18 @@ function stanford_landing_page_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'stanford_callout_block' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'stanford_circles' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'stanford_list' => array(
         'label' => 'above',

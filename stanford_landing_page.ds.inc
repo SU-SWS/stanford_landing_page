@@ -103,9 +103,10 @@ function stanford_landing_page_ds_custom_fields_info() {
   $ds_field = new stdClass();
   $ds_field->api_version = 1;
   $ds_field->field = 'tile_display_title';
-  $ds_field->label = 'Tile Display Title';
+  $ds_field->label = 'Card Display Title';
   $ds_field->field_type = 5;
   $ds_field->entities = array(
+    'bean' => 'bean',
     'field_collection_item' => 'field_collection_item',
   );
   $ds_field->ui_limit = '';
@@ -257,6 +258,7 @@ function stanford_landing_page_ds_view_modes_info() {
   $ds_view_mode->view_mode = 'large_landscape';
   $ds_view_mode->label = 'Large Landscape';
   $ds_view_mode->entities = array(
+    'bean' => 'bean',
     'field_collection_item' => 'field_collection_item',
   );
   $export['large_landscape'] = $ds_view_mode;
@@ -282,8 +284,9 @@ function stanford_landing_page_ds_view_modes_info() {
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
   $ds_view_mode->view_mode = 'stanford_tiles';
-  $ds_view_mode->label = 'Tiles';
+  $ds_view_mode->label = 'Cards';
   $ds_view_mode->entities = array(
+    'bean' => 'bean',
     'field_collection_item' => 'field_collection_item',
   );
   $export['stanford_tiles'] = $ds_view_mode;
