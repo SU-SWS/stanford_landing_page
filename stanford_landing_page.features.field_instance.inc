@@ -64,7 +64,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'stanford_circles' => array(
         'label' => 'hidden',
@@ -85,7 +85,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 8,
       ),
       'stanford_tiles' => array(
         'label' => 'hidden',
@@ -334,7 +334,7 @@ function stanford_landing_page_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'numbered_guide' => array(
         'label' => 'hidden',
@@ -450,8 +450,12 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'large_landscape' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'stanford_landing_page_fc_link_heading_formatter',
+        'settings' => array(
+          'html_tag' => 'h2',
+          'link_field' => 'field_s_lp_item_link',
+        ),
+        'type' => 'stanford_landing_page_fc_link_heading_formatter',
         'weight' => 6,
       ),
       'numbered_guide' => array(
@@ -463,9 +467,13 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'stanford_4_col_header' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
+        'module' => 'stanford_landing_page_fc_link_heading_formatter',
+        'settings' => array(
+          'html_tag' => 'h2',
+          'link_field' => 'field_s_lp_item_link',
+        ),
+        'type' => 'stanford_landing_page_fc_link_heading_formatter',
+        'weight' => 2,
       ),
       'stanford_block' => array(
         'label' => 'hidden',
@@ -483,9 +491,13 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'stanford_callout_block' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
+        'module' => 'stanford_landing_page_fc_link_heading_formatter',
+        'settings' => array(
+          'html_tag' => 'h2',
+          'link_field' => 'field_s_lp_item_link',
+        ),
+        'type' => 'stanford_landing_page_fc_link_heading_formatter',
+        'weight' => 8,
       ),
       'stanford_circles' => array(
         'label' => 'hidden',
@@ -502,8 +514,12 @@ function stanford_landing_page_field_default_field_instances() {
       ),
       'stanford_medium_square' => array(
         'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'stanford_landing_page_fc_link_heading_formatter',
+        'settings' => array(
+          'html_tag' => 'h2',
+          'link_field' => 'field_s_lp_item_link',
+        ),
+        'type' => 'stanford_landing_page_fc_link_heading_formatter',
         'weight' => 6,
       ),
       'stanford_tiles' => array(
@@ -571,7 +587,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -617,7 +633,7 @@ function stanford_landing_page_field_default_field_instances() {
           'view_mode' => 'stanford_medium_square',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -696,7 +712,7 @@ function stanford_landing_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',

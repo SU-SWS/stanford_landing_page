@@ -186,7 +186,7 @@ function stanford_landing_page_field_group_info() {
     'children' => array(
       0 => 'field_s_lp_item_description',
       1 => 'field_s_lp_item_image',
-      2 => 'stanford_display_title',
+      2 => 'field_s_lp_item_title',
       3 => 'group_s_more_link_style',
     ),
     'format_type' => 'div',
@@ -283,7 +283,7 @@ function stanford_landing_page_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_s_lp_item_description',
-      1 => 'callout_display_title',
+      1 => 'field_s_lp_item_title',
       2 => 'group_s_more_link_style',
     ),
     'format_type' => 'div',
@@ -376,7 +376,7 @@ function stanford_landing_page_field_group_info() {
   $field_group->parent_name = 'group_s_callout_style';
   $field_group->data = array(
     'label' => 'More Link Style',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
       0 => 'field_s_lp_item_link',
     ),
@@ -408,7 +408,7 @@ function stanford_landing_page_field_group_info() {
   $field_group->parent_name = 'group_s_postcard_content';
   $field_group->data = array(
     'label' => 'Link Style',
-    'weight' => '2',
+    'weight' => '9',
     'children' => array(
       0 => 'field_s_lp_item_link',
     ),
@@ -442,7 +442,7 @@ function stanford_landing_page_field_group_info() {
     'weight' => '12',
     'children' => array(
       0 => 'field_s_lp_item_description',
-      1 => 'tile_display_title',
+      1 => 'field_s_lp_item_title',
       2 => 'group_s_more_link_style',
     ),
     'format_type' => 'div',
@@ -538,7 +538,7 @@ function stanford_landing_page_field_group_info() {
     'weight' => '13',
     'children' => array(
       0 => 'field_s_lp_item_image',
-      1 => 'tile_display_title',
+      1 => 'field_s_lp_item_title',
     ),
     'format_type' => 'div',
     'format_settings' => array(
