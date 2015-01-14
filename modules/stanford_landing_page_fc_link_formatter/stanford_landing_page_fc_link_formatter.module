@@ -24,16 +24,6 @@ function stanford_landing_page_fc_link_formatter_field_formatter_info() {
 }
 
 /**
- * [stanford_landing_page_fc_link_formatter_field_formatter_info_alter description]
- * @param  [type] $info [description]
- * @return [type]       [description]
- */
-// function stanford_landing_page_fc_link_formatter_field_formatter_info_alter(&$info) {
-//   dpm($info);
-//   dpm("FORMATTER INFO ALTER");
-// }
-
-/**
  * Implements hook_field_formatter_settings_form().
  */
 function stanford_landing_page_fc_link_formatter_field_formatter_settings_form($field, $instance, $view_mode, $form, &$form_state) {
