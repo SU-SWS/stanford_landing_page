@@ -109,7 +109,7 @@ function stanford_landing_page_fc_link_heading_formatter_field_formatter_view($e
     if (!empty($settings['link_field'])) {
       $link = isset($entity->{$settings['link_field']}[$langcode][$delta]['url']) ? $entity->{$settings['link_field']}[$langcode][$delta]['url'] : NULL;
       if (!empty($link)) {
-        $output .= l($text, $link, array('attributes' => array('title' => $text)));
+        $output .= l($item['value'], $link, array('attributes' => array('title' => $text)));
       }
       else {
         $output .= $text;
