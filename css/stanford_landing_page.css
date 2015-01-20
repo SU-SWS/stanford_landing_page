@@ -9,11 +9,11 @@
 .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item,
 .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     display: inline-block;
-    float: left;
     margin-right: 3%;
     width: 31.333%;
     max-width: 370px;
     margin-bottom: 1.5em;
+    vertical-align: top;
 }
 .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3),
 .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(6),
