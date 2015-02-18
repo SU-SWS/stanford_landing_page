@@ -20,6 +20,18 @@ function stanford_landing_page_node_convert_menu() {
 }
 
 /**
+ * Implements hook_permission().
+ */
+function stanford_landing_page_node_convert_permission() {
+  return array(
+    'convert from stanford page to landing page' =>  array(
+      'title' => t('Convert to landing page'),
+      'description' => t('Convert a stanford page to landing page from vertical tab on node edit form'),
+    ),
+  );
+}
+
+/**
  * Implements hook_form_alter().
  */
 function stanford_landing_page_node_convert_form_node_form_alter(&$form, &$form_state, $form_id) {
@@ -42,6 +54,7 @@ function stanford_landing_page_node_convert_form_node_form_alter(&$form, &$form_
     '#collapsed' => TRUE,
     '#group' => 'additional_settings',
     '#weight' => 25,
+    '#access' => user_access("convert from stanford page to landing page"),
   );
 
   $form['slpnc']['convert_to_lp'] = array(
