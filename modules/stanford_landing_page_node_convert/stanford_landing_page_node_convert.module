@@ -114,7 +114,10 @@ function stanford_landing_page_node_convert_form_confirm_form_submit($form, $for
 
   $type = $form_state['values']['convert_type'];
   $nid = $form_state['values']['nid'];
-  node_convert_convert_nodes_using_template(array($nid), $type);
+  // node_convert_convert_nodes_using_template(array($nid), $type);
+
+  // Use this bypass function to avoid the permission check.
+  stanford_landing_page_node_convert_convert_nodes_using_template_bypass(array($nid), $type);
 
   // Make one small change to set the default layout.
   $node = node_load($nid, NULL, TRUE);
@@ -122,6 +125,31 @@ function stanford_landing_page_node_convert_form_confirm_form_submit($form, $for
   node_save($node);
 
   drupal_goto("node/" . $nid . "/edit");
+}
+
+/**
+ * Copy and modification of the node_convert_convert_nodes_using_template function.
+ *
+ * This bypasses the node_convert permissions and allows us to just use ours.
+ * @see node_convert_convert_nodes_using_template
+ */
+function stanford_landing_page_node_convert_convert_nodes_using_template_bypass($nodes, $template_id) {
+  $template = node_convert_load_template($template_id);
+
+  foreach ($nodes as $nid) {
+    $node = node_load($nid);
+    // The source type of the given node doesn't match the template one, so we discard it with a message.
+    if ($node->type != $template['source_type']) {
+      drupal_set_message(t("Node %nid doesn't match the template source type. Discarded.", array('%nid' => $node->nid)), 'warning');
+    }
+    else {
+      $result = node_convert_node_convert($node->nid, $template['destination_type'], $template['data']['fields']['source'], $template['data']['fields']['destination'], $template['data']['no_fields'], $template['data']['hook_options']);
+      // We display errors if there are any, or the default success message.
+      node_convert_messages($result, array('nid' => $nid));
+    }
+  }
+
+  return TRUE;
 }
 
 /**
