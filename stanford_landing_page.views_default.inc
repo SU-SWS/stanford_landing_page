@@ -51,7 +51,7 @@ function stanford_landing_page_views_default_views() {
     'view_node' => 'edit_node',
     'delete_node' => 'edit_node',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'changed';
   $handler->display->display_options['style_options']['info'] = array(
     'views_bulk_operations' => array(
       'align' => '',
