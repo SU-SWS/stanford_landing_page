@@ -42,6 +42,7 @@ function stanford_landing_page_views_default_views() {
     'field_s_image_info' => 'field_s_image_info',
     'title' => 'title',
     'field_s_landing_page_layout' => 'field_s_landing_page_layout',
+    'timestamp' => 'title',
     'status' => 'status',
     'changed' => 'changed',
     'name' => 'name',
@@ -74,6 +75,11 @@ function stanford_landing_page_views_default_views() {
     'field_s_landing_page_layout' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'timestamp' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
