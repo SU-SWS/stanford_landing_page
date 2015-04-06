@@ -42,7 +42,6 @@ function stanford_landing_page_views_default_views() {
     'field_s_image_info' => 'field_s_image_info',
     'title' => 'title',
     'field_s_landing_page_layout' => 'field_s_landing_page_layout',
-    'timestamp' => 'title',
     'status' => 'status',
     'changed' => 'changed',
     'name' => 'name',
@@ -79,11 +78,6 @@ function stanford_landing_page_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'timestamp' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
     'status' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
@@ -93,7 +87,7 @@ function stanford_landing_page_views_default_views() {
     ),
     'changed' => array(
       'sortable' => 1,
-      'default_sort_order' => 'asc',
+      'default_sort_order' => 'desc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -327,6 +321,7 @@ function stanford_landing_page_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
