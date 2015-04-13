@@ -93,7 +93,7 @@ function stanford_landing_page_views_default_views() {
     ),
     'changed' => array(
       'sortable' => 1,
-      'default_sort_order' => 'asc',
+      'default_sort_order' => 'desc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
