@@ -172,7 +172,6 @@ function stanford_landing_page_node_convert_get_template($type = "all") {
         2 => 'field_s_page_image_insert',
         3 => 'body',
         4 => 'field_stanford_subsite_sub_tags',
-        5 => 'field_s_page_manager_information',
       ),
       'destination' => array(
         0 => 'field_s_image_info',
@@ -180,7 +179,6 @@ function stanford_landing_page_node_convert_get_template($type = "all") {
         2 => 'discard',
         3 => 'body',
         4 => 'field_stanford_subsite_sub_tags',
-        5 => 'append_to_body',
       ),
     ),
     'hook_options' => NULL,
