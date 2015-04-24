@@ -704,7 +704,11 @@ function stanford_landing_page_field_default_field_instances() {
   // Exported field_instance: 'node-stanford_landing_page-field_s_landing_page_layout'
   $field_instances['node-stanford_landing_page-field_s_landing_page_layout'] = array(
     'bundle' => 'stanford_landing_page',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'stanford_medium_square',
+      ),
+    ),
     'deleted' => 0,
     'description' => 'Select the layout you want to use for this Landing Page.',
     'display' => array(
