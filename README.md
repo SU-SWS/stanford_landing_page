@@ -1,5 +1,5 @@
 #[Stanford Landing Page](https://github.com/SU-SWS/stanford_landing_page)
-##### Version: 7.x-1.1
+##### Version: 7.x-1.2
 
 Maintainers: [sherakama](https://github.com/sherakama), [jbickar](https://github.com/jbickar)
 [Changelog.txt](CHANGELOG.txt)
