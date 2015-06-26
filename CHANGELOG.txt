@@ -1,6 +1,11 @@
 Stanford Landing Page
 ------------------------------------------------------
 
+7.x-1.2                                     2015-06-26
+------------------------------------------------------
+ - Changed default sorting to descending for changed date
+ - Removed field_s_page_manager_information from the convert fields
+ - Layout field is set to list by default
 
 7.x-1.1                                     2014-11-05
 ------------------------------------------------------
