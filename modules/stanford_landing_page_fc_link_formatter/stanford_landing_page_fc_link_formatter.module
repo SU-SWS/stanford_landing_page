@@ -99,10 +99,15 @@ function stanford_landing_page_fc_link_formatter_field_formatter_view($entity_ty
     $link_file = TRUE;
   }
   elseif ($image_link == 'item-link') {
-
     if (!empty($entity->field_s_lp_item_link[$language->language])) {
       $uri = array(
         'path' => $entity->field_s_lp_item_link[$language->language][0]['url'],
+        'options' => array(),
+      );
+    }
+    elseif (!empty($entity->field_s_lp_item_link[LANGUAGE_NONE])) {
+      $uri = array(
+        'path' => $entity->field_s_lp_item_link[LANGUAGE_NONE][0]['url'],
         'options' => array(),
       );
     }
