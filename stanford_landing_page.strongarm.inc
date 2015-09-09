@@ -94,9 +94,6 @@ function stanford_landing_page_strongarm() {
       'large_landscape' => array(
         'custom_settings' => TRUE,
       ),
-      'numbered_guide' => array(
-        'custom_settings' => TRUE,
-      ),
       'stanford_12_col_banner_tall' => array(
         'custom_settings' => FALSE,
       ),
@@ -111,9 +108,6 @@ function stanford_landing_page_strongarm() {
       ),
       'caw_banner' => array(
         'custom_settings' => FALSE,
-      ),
-      'stanford_callout_block' => array(
-        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
