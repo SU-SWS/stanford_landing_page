@@ -188,20 +188,6 @@ function stanford_landing_page_views_default_views() {
       'override_label' => 0,
       'label' => '',
     ),
-    'action::views_bulk_operations_modify_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 1,
-      'label' => 'Modify',
-      'settings' => array(
-        'show_all_tokens' => 1,
-        'display_values' => array(
-          'stanford_page::field_s_image_info' => 'stanford_page::field_s_image_info',
-          'stanford_page::field_s_page_file' => 'stanford_page::field_s_page_file',
-        ),
-      ),
-    ),
     'action::views_bulk_operations_argument_selector_action' => array(
       'selected' => 0,
       'skip_confirmation' => 0,
