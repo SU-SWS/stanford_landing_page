@@ -251,7 +251,7 @@ function stanford_landing_page_field_group_info() {
       0 => 'field_s_lp_item_description',
       1 => 'field_s_lp_item_image',
       2 => 'field_s_lp_item_link',
-      3 => 'redirect',
+      3 => 'field_s_lp_2nd_links',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -280,6 +280,7 @@ function stanford_landing_page_field_group_info() {
     'weight' => '5',
     'children' => array(
       0 => 'field_s_lp_item_link',
+      1 => 'field_s_lp_2nd_links',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -311,6 +312,7 @@ function stanford_landing_page_field_group_info() {
     'weight' => '9',
     'children' => array(
       0 => 'field_s_lp_item_link',
+      1 => 'field_s_lp_2nd_links',
     ),
     'format_type' => 'div',
     'format_settings' => array(

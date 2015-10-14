@@ -116,6 +116,7 @@ function stanford_landing_page_ds_layout_settings_info() {
         3 => 'field_s_lp_item_link',
         4 => 'field_s_lp_item_description',
         5 => 'group_s_more_link_style',
+        6 => 'field_s_lp_2nd_links',
       ),
     ),
     'fields' => array(
@@ -125,6 +126,7 @@ function stanford_landing_page_ds_layout_settings_info() {
       'field_s_lp_item_link' => 'ds_content',
       'field_s_lp_item_description' => 'ds_content',
       'group_s_more_link_style' => 'ds_content',
+      'field_s_lp_2nd_links' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -140,42 +142,6 @@ function stanford_landing_page_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'field_collection_item|field_landing_page_item|stanford_callout_block';
-  $ds_layout->entity_type = 'field_collection_item';
-  $ds_layout->bundle = 'field_landing_page_item';
-  $ds_layout->view_mode = 'stanford_callout_block';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'group_s_callout_style',
-        1 => 'field_s_lp_item_link',
-        2 => 'field_s_lp_item_title',
-        3 => 'field_s_lp_item_description',
-        4 => 'group_s_more_link_style',
-      ),
-    ),
-    'fields' => array(
-      'group_s_callout_style' => 'ds_content',
-      'field_s_lp_item_link' => 'ds_content',
-      'field_s_lp_item_title' => 'ds_content',
-      'field_s_lp_item_description' => 'ds_content',
-      'group_s_more_link_style' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'ds_content' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-  );
-  $export['field_collection_item|field_landing_page_item|stanford_callout_block'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
   $ds_layout->id = 'field_collection_item|field_landing_page_item|stanford_medium_square';
   $ds_layout->entity_type = 'field_collection_item';
   $ds_layout->bundle = 'field_landing_page_item';
@@ -186,17 +152,19 @@ function stanford_landing_page_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'group_s_postcard',
         1 => 'field_s_lp_item_link',
-        2 => 'field_s_lp_item_title',
-        3 => 'field_s_lp_item_image',
-        4 => 'field_s_lp_item_description',
-        5 => 'group_s_more_link_style',
-        6 => 'group_s_postcard_image',
-        7 => 'group_s_postcard_content',
+        2 => 'field_s_lp_2nd_links',
+        3 => 'field_s_lp_item_title',
+        4 => 'field_s_lp_item_image',
+        5 => 'field_s_lp_item_description',
+        6 => 'group_s_more_link_style',
+        7 => 'group_s_postcard_image',
+        8 => 'group_s_postcard_content',
       ),
     ),
     'fields' => array(
       'group_s_postcard' => 'ds_content',
       'field_s_lp_item_link' => 'ds_content',
+      'field_s_lp_2nd_links' => 'ds_content',
       'field_s_lp_item_title' => 'ds_content',
       'field_s_lp_item_image' => 'ds_content',
       'field_s_lp_item_description' => 'ds_content',
@@ -243,16 +211,6 @@ function stanford_landing_page_ds_view_modes_info() {
     'field_collection_item' => 'field_collection_item',
   );
   $export['stanford_block'] = $ds_view_mode;
-
-  $ds_view_mode = new stdClass();
-  $ds_view_mode->api_version = 1;
-  $ds_view_mode->view_mode = 'stanford_callout_block';
-  $ds_view_mode->label = 'Callouts';
-  $ds_view_mode->entities = array(
-    'bean' => 'bean',
-    'field_collection_item' => 'field_collection_item',
-  );
-  $export['stanford_callout_block'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;
