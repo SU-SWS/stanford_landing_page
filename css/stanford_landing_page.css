@@ -4,6 +4,9 @@
 .field.field-name-tile-display-image p {
     margin-bottom: 0;
 }
+.field-name-field-s-lp-2nd-links .field-item {
+    margin-bottom: 1em;
+}
 
 /* Responsive grids for blocks and tiles */
 .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item,
