@@ -500,7 +500,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'stanford_landing_page_fc_link_heading_formatter',
         'settings' => array(
           'html_tag' => 'h2',
-          'link_field' => 'field_s_lp_item_link',
+          'link_field' => '',
         ),
         'type' => 'stanford_landing_page_fc_link_heading_formatter',
         'weight' => 2,
@@ -537,7 +537,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'stanford_landing_page_fc_link_heading_formatter',
         'settings' => array(
           'html_tag' => 'h2',
-          'link_field' => 'field_s_lp_item_link',
+          'link_field' => '',
         ),
         'type' => 'stanford_landing_page_fc_link_heading_formatter',
         'weight' => 6,
