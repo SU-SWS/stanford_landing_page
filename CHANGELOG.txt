@@ -1,6 +1,18 @@
 Stanford Landing Page
 ------------------------------------------------------
 
+7.x-1.3                                    2015-06-26
+------------------------------------------------------
+- VPSADEV-327: Removed title links on list and blocks view modes
+- Clean up of removed view modes and actions
+- VPSADEV-67: Added secondary links field to feature
+- VPSADEV-67: Hide/show secondary links on cards select and enforce a url for primary on cards layout
+- Removed numbered guide and callouts view modes
+- Reverted lost VBO options
+- VPSADEV-146: Added author to exposed filters of manage view and row counter
+- Handle field formatter language values with grace
+- CSS Fixes
+
 7.x-1.2                                     2015-06-26
 ------------------------------------------------------
  - Changed default sorting to descending for changed date
