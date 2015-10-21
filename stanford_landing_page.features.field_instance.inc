@@ -770,7 +770,7 @@ function stanford_landing_page_field_default_field_instances() {
     'bundle' => 'stanford_landing_page',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter a short lead sentence for this landing page.',
+    'description' => 'Enter a short lead sentence for this landing page. The maximum length of characters in this field is 255.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -840,7 +840,7 @@ function stanford_landing_page_field_default_field_instances() {
   t('Body');
   t('Description');
   t('Enter URL link to location for this landing page item. This is used as the main link for the cards layout and the first link in a list of links.');
-  t('Enter a short lead sentence for this landing page.');
+  t('Enter a short lead sentence for this landing page. The maximum length of characters in this field is 255.');
   t('Image');
   t('Landing Page Item');
   t('Layout');
