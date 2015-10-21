@@ -160,50 +160,49 @@ function stanford_landing_page_views_default_views() {
       'override_label' => 1,
       'label' => 'Delete',
     ),
-    'action::views_bulk_operations_delete_revision' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_script_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_sticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::node_make_unsticky_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
-    'action::views_bulk_operations_argument_selector_action' => array(
-      'selected' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-      'settings' => array(
-        'url' => '',
-      ),
-    ),
-    'action::node_promote_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
-      'override_label' => 0,
-      'label' => '',
-    ),
+	'action::views_bulk_operations_delete_revision' => array(
+	  'selected' => 0,
+	  'postpone_processing' => 0,
+	  'skip_confirmation' => 0,
+	  'override_label' => 0,
+	  'label' => '',
+	),
+	'action::views_bulk_operations_script_action' => array(
+	  'selected' => 0,
+	  'postpone_processing' => 0,
+	  'skip_confirmation' => 0,
+	  'override_label' => 0,
+	  'label' => '',
+	),
+	'action::node_make_sticky_action' => array(
+	  'selected' => 0,
+	  'postpone_processing' => 0,
+	  'skip_confirmation' => 0,
+	  'override_label' => 0,
+	  'label' => '',
+	),
+	'action::node_make_unsticky_action' => array(
+	  'selected' => 0,
+	  'postpone_processing' => 0,
+	  'skip_confirmation' => 0,
+	  'override_label' => 0,
+	  'label' => '',
+	),
+	'action::views_bulk_operations_argument_selector_action' => array(
+	  'selected' => 0,
+	  'postpone_processing' => 0,
+	  'skip_confirmation' => 0,
+	  'override_label' => 0,
+	  'label' => '',
+	  ),
+	),
+	'action::node_promote_action' => array(
+	  'selected' => 0,
+	  'postpone_processing' => 0,
+	  'skip_confirmation' => 0,
+	  'override_label' => 0,
+	  'label' => '',
+	),
     'action::node_publish_action' => array(
       'selected' => 1,
       'postpone_processing' => 0,
@@ -253,7 +252,7 @@ function stanford_landing_page_views_default_views() {
       'override_label' => 0,
       'label' => '',
     ),
-  );
+);
   /* Field: Global: View result counter */
   $handler->display->display_options['fields']['counter']['id'] = 'counter';
   $handler->display->display_options['fields']['counter']['table'] = 'views';
