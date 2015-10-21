@@ -152,7 +152,7 @@ function stanford_landing_page_views_default_views() {
       'skip_confirmation' => 0,
       'override_label' => 0,
       'label' => '',
-	),
+    ),
     'action::views_bulk_operations_delete_item' => array(
       'selected' => 1,
       'postpone_processing' => 0,
