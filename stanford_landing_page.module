@@ -17,13 +17,6 @@ function stanford_landing_page_preprocess_node(&$vars) {
     if (isset($vars['field_s_landing_page_layout'][LANGUAGE_NONE][0]['value'])) {
       $vars['classes_array'][] = drupal_clean_css_identifier($vars['field_s_landing_page_layout'][LANGUAGE_NONE][0]['value']);
     }
-    // If the view mode and page don't match because of display suite view_mode switch override settings.
-    if (module_exists("ds") && isset($vars["ds_switch"])) {
-      $is_node_page = node_is_page($vars["node"]);
-      if ($is_node_page) {
-        $vars['page'] = TRUE;
-      }
-    }
   }
 
 }
