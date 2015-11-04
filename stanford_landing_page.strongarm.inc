@@ -197,6 +197,7 @@ function stanford_landing_page_strongarm() {
   $strongarm->name = 'node_options_stanford_landing_page';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_stanford_landing_page'] = $strongarm;
 
