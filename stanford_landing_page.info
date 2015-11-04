@@ -76,6 +76,7 @@ features[variable][] = menu_parent_stanford_landing_page
 features[variable][] = node_options_stanford_landing_page
 features[variable][] = node_preview_stanford_landing_page
 features[variable][] = node_submitted_stanford_landing_page
+features[variable][] = pathauto_node_stanford_landing_page_pattern
 features[views_view][] = landing_page_manage
 features_exclude[field_base][body] = body
 project status url = https://github.com/SU-SWS/stanford_landing_page
