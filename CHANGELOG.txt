@@ -1,6 +1,12 @@
 Stanford Landing Page
 ------------------------------------------------------
 
+7.x-1.4                                    2015-11-10
+------------------------------------------------------
+- Added pathauto pattern
+- Set create new revision as true for default
+- Changed help text on field Lead text
+
 7.x-1.3                                    2015-06-26
 ------------------------------------------------------
 - VPSADEV-327: Removed title links on list and blocks view modes
