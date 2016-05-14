@@ -447,7 +447,7 @@ function stanford_landing_page_field_group_info() {
       'label' => 'Card Link Style',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'tile-link',
+        'classes' => 'tile-link column',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
