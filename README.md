@@ -6,10 +6,9 @@ Maintainers: [sherakama](https://github.com/sherakama), [jbickar](https://github
 
 This module provides a content type that supports dynamic layouts. With multiple view modes, site builders can choose which layout they want to use on a per-node basis. Included view modes are:
 
-* Large Landscape
-* Blocks
 * List
-* Titles only
+* Blocks
+* Cards
 
 Additional included modules
 ---
