@@ -4,7 +4,7 @@
 Maintainers: [sherakama](https://github.com/sherakama), [jbickar](https://github.com/jbickar)
 [Changelog.txt](CHANGELOG.txt)
 
-This module provides a content type that supports dynamic layouts. With multiple view modes, users can choose which layout they want to on a per node basis. Included view modes are:
+This module provides a content type that supports dynamic layouts. With multiple view modes, site builders can choose which layout they want to use on a per-node basis. Included view modes are:
 
 * Large Landscape
 * Blocks
