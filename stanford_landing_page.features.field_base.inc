@@ -51,6 +51,7 @@ function stanford_landing_page_field_default_field_bases() {
         'stanford_medium_square' => 'List',
         'stanford_4_col_header' => 'Blocks',
         'large_landscape' => 'Cards',
+        'checkered' => 'Checkered',
       ),
       'allowed_values_function' => '',
     ),
