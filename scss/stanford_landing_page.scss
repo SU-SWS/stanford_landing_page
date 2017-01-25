@@ -101,21 +101,21 @@
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items {
     > .field-item {
       margin-bottom: 20px;
-      background: #e9e6df;
     }
     .image-available {
       .field {
-        margin: 10px 2%;
-        //width: 46%;
+        margin-top: 10px;
       }
     }
-
+    > .field.field-name-field-s-lp-item-title {
+        margin: 10px 0;
+      }
     > .even {
 
       .image-available {
         .field-name-field-s-lp-item-image {
           float: left;
-          width: 46%;
+          width: 48%;
         }
       }
 
@@ -124,7 +124,7 @@
       .image-available {
         .field-name-field-s-lp-item-image {
           float: right;
-          width: 46%;
+          width: 48%;
         }
       }
     }
