@@ -98,24 +98,24 @@
 }
 
 @media (min-width: 480px) {
-  .node-type-stanford-landing-page .checkered-view-mode > .field-items > .field-item {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .field-item {
     margin-bottom: 20px;
     background: #e9e6df;
   }
-  .node-type-stanford-landing-page .checkered-view-mode > .field-items .field {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items .image-available .field {
     margin: 10px 2%;
     width: 46%;
   }
-  .node-type-stanford-landing-page .checkered-view-mode > .field-items > .even .field {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .even .image-available .field {
     float: right;
   }
-  .node-type-stanford-landing-page .checkered-view-mode > .field-items > .even .field-name-field-s-lp-item-image {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .even .image-available .field-name-field-s-lp-item-image {
     float: left;
   }
-  .node-type-stanford-landing-page .checkered-view-mode > .field-items > .odd .field {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .odd .image-available .field {
     float: left;
   }
-  .node-type-stanford-landing-page .checkered-view-mode > .field-items > .odd .field-name-field-s-lp-item-image {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .odd .image-available .field-name-field-s-lp-item-image {
     float: right;
   }
 }
