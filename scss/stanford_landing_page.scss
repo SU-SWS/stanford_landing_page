@@ -100,7 +100,7 @@
 @media (min-width: 480px) {
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items {
     > .field-item {
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
     .image-available, .no-image {
       .field {
@@ -115,6 +115,7 @@
           float: left;
           width: 46%;
           margin-right: 4%;
+          margin-bottom: 10px
         }
       }
 
@@ -125,6 +126,7 @@
           float: right;
           width: 46%;
           margin-left: 4%;
+          margin-bottom: 10px;
         }
       }
     }

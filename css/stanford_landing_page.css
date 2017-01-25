@@ -99,7 +99,7 @@
 
 @media (min-width: 480px) {
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .field-item {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items .image-available .field, .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items .no-image .field {
     margin-top: 10px;
@@ -109,10 +109,12 @@
     float: left;
     width: 46%;
     margin-right: 4%;
+    margin-bottom: 10px;
   }
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .odd .image-available .field-name-field-s-lp-item-image {
     float: right;
     width: 46%;
     margin-left: 4%;
+    margin-bottom: 10px;
   }
 }
