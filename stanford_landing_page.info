@@ -26,6 +26,7 @@ features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[ds_field_settings][] = field_collection_item|field_landing_page_item|large_landscape
 features[ds_field_settings][] = field_collection_item|field_landing_page_item|stanford_4_col_header
+features[ds_field_settings][] = field_collection_item|field_landing_page_item|stanford_6_col_banner
 features[ds_field_settings][] = field_collection_item|field_landing_page_item|stanford_medium_square
 features[ds_layout_settings][] = field_collection_item|field_landing_page_item|large_landscape
 features[ds_layout_settings][] = field_collection_item|field_landing_page_item|stanford_4_col_header
