@@ -104,18 +104,13 @@
   }
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items .image-available .field {
     margin: 10px 2%;
-    width: 46%;
-  }
-  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .even .image-available .field {
-    float: right;
   }
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .even .image-available .field-name-field-s-lp-item-image {
     float: left;
-  }
-  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .odd .image-available .field {
-    float: left;
+    width: 46%;
   }
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .odd .image-available .field-name-field-s-lp-item-image {
     float: right;
+    width: 46%;
   }
 }

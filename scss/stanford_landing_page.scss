@@ -106,29 +106,25 @@
     .image-available {
       .field {
         margin: 10px 2%;
-        width: 46%;
+        //width: 46%;
       }
     }
 
     > .even {
 
       .image-available {
-        .field {
-          float: right;
-        }
         .field-name-field-s-lp-item-image {
           float: left;
+          width: 46%;
         }
       }
 
     }
     > .odd {
       .image-available {
-        .field {
-          float: left;
-        }
         .field-name-field-s-lp-item-image {
           float: right;
+          width: 46%;
         }
       }
     }
