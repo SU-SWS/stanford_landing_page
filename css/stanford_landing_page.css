@@ -101,7 +101,7 @@
   .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items > .field-item {
     margin-bottom: 35px;
   }
-  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items .image-available .field {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items .image-available .field, .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items .no-image .field {
     margin-top: 10px;
     margin-bottom: 0;
   }
