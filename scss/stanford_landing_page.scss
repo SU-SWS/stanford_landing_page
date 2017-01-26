@@ -132,3 +132,13 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .node-type-stanford-landing-page .stanford-6-col-banner-view-mode > .field-items {
+    .image-available {
+      .field-name-field-s-lp-item-image {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
