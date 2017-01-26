@@ -53,6 +53,7 @@ features[field_group][] = group_s_block_style|field_collection_item|field_landin
 features[field_group][] = group_s_block_title_style|field_collection_item|field_landing_page_item|stanford_blocks
 features[field_group][] = group_s_lp_item_content|field_collection_item|field_landing_page_item|form
 features[field_group][] = group_s_more_link_style|field_collection_item|field_landing_page_item|stanford_4_col_header
+features[field_group][] = group_s_more_link_style|field_collection_item|field_landing_page_item|stanford_6_col_banner
 features[field_group][] = group_s_more_link_style|field_collection_item|field_landing_page_item|stanford_medium_square
 features[field_group][] = group_s_postcard_content|field_collection_item|field_landing_page_item|stanford_medium_square
 features[field_group][] = group_s_postcard_image|field_collection_item|field_landing_page_item|stanford_medium_square

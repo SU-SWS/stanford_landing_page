@@ -472,10 +472,9 @@ function stanford_landing_page_field_group_info() {
     'label' => 'Side Info',
     'weight' => '1',
     'children' => array(
-      0 => 'field_s_lp_2nd_links',
-      1 => 'field_s_lp_item_description',
-      2 => 'field_s_lp_item_link',
-      3 => 'group_title_wrap',
+      0 => 'field_s_lp_item_description',
+      1 => 'group_s_more_link_style',
+      2 => 'group_title_wrap',
     ),
     'format_type' => 'div',
     'format_settings' => array(

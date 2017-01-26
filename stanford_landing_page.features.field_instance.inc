@@ -43,7 +43,7 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'stanford_medium_square' => array(
         'label' => 'hidden',
