@@ -64,6 +64,8 @@ engines:
         enabled: false
       CleanCode/BooleanArgumentFlag:
         enabled: false
+      UnusedFormalParameter:
+        enabled: false
     config:
       # https://phpmd.org/rules/index.html
       # The following sets include everything except the controversial set.
@@ -116,16 +118,17 @@ ratings:
   - "**.js"
 # exclude these files/paths
 exclude_paths:
-- "**.features.**"
-- "**.views_default.inc"
-- "**.field_group.inc"
-- "**.ds.inc"
-- "**.bean.inc"
-- "**.context.inc"
-- "test/**/*"
-- "**/vendor/**/*"
-- "**.min.*"
-- "tests/"
-- "spec/"
-- "**/vendor/"
-- "**.api.php"
+  - "**.features.**"
+  - "**.views_default.inc"
+  - "**.field_group.inc"
+  - "**.ds.inc"
+  - "**.bean.inc"
+  - "**.context.inc"
+  - "**.strongarm.inc"
+  - "test/**/*"
+  - "**/vendor/**/*"
+  - "**.min.*"
+  - "tests/"
+  - "spec/"
+  - "**/vendor/"
+  - "**.api.php"
