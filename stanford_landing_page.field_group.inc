@@ -301,6 +301,39 @@ function stanford_landing_page_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_more_link_style|field_collection_item|field_landing_page_item|stanford_6_col_banner';
+  $field_group->group_name = 'group_s_more_link_style';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'stanford_6_col_banner';
+  $field_group->parent_name = 'group_side_info';
+  $field_group->data = array(
+    'label' => 'More Link Style',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_s_lp_2nd_links',
+      1 => 'field_s_lp_item_link',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'More Link Style',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'more-link',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_more_link_style|field_collection_item|field_landing_page_item|stanford_6_col_banner'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_more_link_style|field_collection_item|field_landing_page_item|stanford_medium_square';
   $field_group->group_name = 'group_s_more_link_style';
   $field_group->entity_type = 'field_collection_item';
@@ -567,6 +600,7 @@ function stanford_landing_page_field_group_info() {
   t('Lead text styles');
   t('Link Style');
   t('More LInk Style');
+  t('More Link Style');
   t('Postcard');
   t('Postcard Content');
   t('Postcard Image');
