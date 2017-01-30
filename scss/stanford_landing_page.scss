@@ -1,5 +1,4 @@
-/* Default styles for Landing Page content type */
-
+// Default styles for Landing Page content type
 .content-body .field.field-name-field-s-lp-item-link,
 .field.field-name-tile-display-image p {
   margin-bottom: 0;
@@ -74,7 +73,7 @@
   }
 }
 
-/* List view mode */
+// List view mode
 .node-type-stanford-landing-page .content-body .view-mode-stanford_medium_square .postcard-left > div:first-child {
   margin: 0;
 }
@@ -106,7 +105,8 @@
       margin-bottom: 25px;
     }
 
-    .image-available, .no-image {
+    .image-available,
+    .no-image {
       .field {
         margin-top: 10px;
         margin-bottom: 0;
@@ -114,7 +114,6 @@
     }
 
     > .even {
-
       .image-available {
         .field-name-field-s-lp-item-image {
           float: left;

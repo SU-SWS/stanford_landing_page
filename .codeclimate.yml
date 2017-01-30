@@ -20,7 +20,9 @@ engines:
       IdSelector:
         enabled: false
       SelectorFormat:
-        enabled: fasle
+        enabled: false
+      NestingDepth:
+        enabled: false
       ColorVariable:
         enabled: false
       PropertySortOrder:
