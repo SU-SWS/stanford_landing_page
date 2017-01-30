@@ -9,7 +9,7 @@
   margin-bottom: 1em;
 }
 
-/* Responsive grids for blocks and tiles */
+// Responsive grids for blocks and tiles
 .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item,
 .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
   display: inline-block;
@@ -38,6 +38,7 @@
   .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
     width: 48.5%;
   }
+
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(3),
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(6),
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item:nth-child(9),
@@ -50,6 +51,7 @@
   .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item:nth-child(15) {
     margin-right: 3%;
   }
+
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item.odd,
   .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item.odd {
     margin-right: 0;
@@ -65,6 +67,7 @@
     float: none;
     max-width: 100%;
   }
+
   .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item img,
   .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item img {
     width: 100%;
@@ -92,7 +95,7 @@
   margin-top: 2em;
 }
 
-/* Blocks view mode */
+// Blocks view mode
 .node-type-stanford-landing-page .view-mode-stanford_4_col_header .field.field-name-stanford-display-title h2 {
   text-transform: uppercase;
 }
@@ -102,12 +105,14 @@
     > .field-item {
       margin-bottom: 25px;
     }
+
     .image-available, .no-image {
       .field {
         margin-top: 10px;
         margin-bottom: 0;
       }
     }
+
     > .even {
 
       .image-available {
@@ -115,11 +120,11 @@
           float: left;
           width: 46%;
           margin-right: 4%;
-          margin-bottom: 10px
+          margin-bottom: 10px;
         }
       }
-
     }
+
     > .odd {
       .image-available {
         .field-name-field-s-lp-item-image {

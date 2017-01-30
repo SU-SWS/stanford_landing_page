@@ -8,7 +8,6 @@
   margin-bottom: 1em;
 }
 
-/* Responsive grids for blocks and tiles */
 .node-stanford-landing-page.large-landscape .field-name-field-landing-page-item > .field-items > .field-item,
 .node-stanford-landing-page.stanford-4-col-header .field-name-field-landing-page-item > .field-items > .field-item {
   display: inline-block;
@@ -92,7 +91,6 @@
   margin-top: 2em;
 }
 
-/* Blocks view mode */
 .node-type-stanford-landing-page .view-mode-stanford_4_col_header .field.field-name-stanford-display-title h2 {
   text-transform: uppercase;
 }
