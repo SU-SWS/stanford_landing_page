@@ -8,6 +8,20 @@ engines:
     checks:
       overqualified-elements:
         enabled: false
+      order-alphabetical:
+        enabled: false
+      adjoining-classes:
+        enabled: false
+      fallback-colors:
+        enabled: false
+      ids:
+        enabled: false
+      regex-selectors:
+        enabled: false
+      box-model:
+        enabled: false
+      qualified-headings:
+        enabled: false
   # We don't lint our coffee. Eew.
   coffeelint:
     enabled: false
@@ -23,6 +37,8 @@ engines:
         enabled: false
       NestingDepth:
         enabled: false
+      MergeableSelector:
+        enabled: false
       ColorVariable:
         enabled: false
       PropertySortOrder:
@@ -34,6 +50,10 @@ engines:
       VendorPrefix:
         enabled: false
       LeadingZero:
+        enabled: false
+      HexLength:
+        enabled: false
+      PseudoElement:
         enabled: false
   phpcodesniffer:
     enabled: true
@@ -81,7 +101,7 @@ engines:
   phan:
     enabled: true
     config:
-      file_extensions: "php,module,profile,inc"
+      file_extensions: "php,module,profile,inc,install"
       # minimum-severity: 1
       ignore-undeclared: true
       # quick: true
@@ -116,7 +136,6 @@ ratings:
   - "**.profile"
   - "**.php"
   - "**.install"
-  - "**.css"
   - "**.scss"
   - "**.sass"
   - "**.js"
@@ -128,7 +147,6 @@ exclude_paths:
   - "**.ds.inc"
   - "**.bean.inc"
   - "**.context.inc"
-  - "**.strongarm.inc"
   - "test/**/*"
   - "**/vendor/**/*"
   - "**.min.*"
@@ -136,3 +154,6 @@ exclude_paths:
   - "spec/"
   - "**/vendor/"
   - "**.api.php"
+  - "*.twig"
+  - "**.tpl.php"
+  - "**.strongarm.inc"
