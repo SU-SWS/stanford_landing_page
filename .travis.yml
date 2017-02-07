@@ -48,6 +48,7 @@
 
 env:
   global:
+    - ENABLE_MODUES="stanford_landing_page"
     - DISABLE_MODULES="webauth"
     - CLICKY_BRANCH="HSDO-709-landing-page"
 
