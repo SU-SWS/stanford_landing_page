@@ -44,7 +44,7 @@
 # SCRIPTS_BRANCH:
 # Leave blank to use the default stanford_travisci_scripts branch.
 # Example:
-# testing
+# HSDO-709-landing-page
 
 env:
   global:
