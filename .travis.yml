@@ -51,6 +51,7 @@ env:
     - ENABLE_MODULES="stanford_landing_page"
     - DISABLE_MODULES="webauth"
     - CLICKY_BRANCH="HSDO-709-landing-page"
+    - SCRIPTS_BRANCH="sheatest"
 
 language: php
 php:
@@ -84,8 +85,6 @@ install:
 before_script:
   # download linky_clicky, grab related tests, and start xvfb virtual display
   - $HOME/stanford_travisci_scripts/bin/before_script.sh
-  - drush @local en -y "features"
-  - drush @local fra -y
 
 script:
   # make sure shell can find drush and run behat tests here, so Travis CI reports accurate results
