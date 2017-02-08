@@ -84,6 +84,7 @@ install:
 before_script:
   # download linky_clicky, grab related tests, and start xvfb virtual display
   - $HOME/stanford_travisci_scripts/bin/before_script.sh
+  - drush @local en -y "features"
   - drush @local fra -y
 
 script:
