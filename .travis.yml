@@ -84,6 +84,8 @@ install:
 before_script:
   # download linky_clicky, grab related tests, and start xvfb virtual display
   - $HOME/stanford_travisci_scripts/bin/before_script.sh
+  - cd $TRAVIS_BUILD_DIR/html
+  - drush fra -y
 
 script:
   # make sure shell can find drush and run behat tests here, so Travis CI reports accurate results
