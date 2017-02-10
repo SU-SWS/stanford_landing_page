@@ -51,6 +51,7 @@ env:
     - ENABLE_MODULES="stanford_landing_page"
     - DISABLE_MODULES="webauth"
     - CLICKY_BRANCH="HSDO-709-landing-page"
+    - SCRIPTS_BRANCH="sheat"
 
 language: php
 php:
