@@ -50,7 +50,7 @@ env:
   global:
     - ENABLE_MODULES="stanford_landing_page"
     - DISABLE_MODULES="webauth"
-#    - CLICKY_BRANCH=""
+    - CLICKY_BRANCH="HSDO-724-checkered"
 #    - SCRIPTS_BRANCH=""
 
 language: php
