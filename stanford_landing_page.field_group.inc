@@ -238,6 +238,36 @@ function stanford_landing_page_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_image_link|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_image_link';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'header_370x170';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Image link',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_s_lp_item_image',
+    ),
+    'format_type' => 'link',
+    'format_settings' => array(
+      'label' => 'Image link',
+      'instance_settings' => array(
+        'link_to' => 'field_s_lp_item_link',
+        'custom_url' => '',
+        'custom_url_normalize' => 0,
+        'target' => 'default',
+        'classes' => 'group-s-lp-image-link field-group-link',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_lp_image_link|field_collection_item|field_landing_page_item|header_370x170'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_lp_item_content|field_collection_item|field_landing_page_item|form';
   $field_group->group_name = 'group_s_lp_item_content';
   $field_group->entity_type = 'field_collection_item';
@@ -265,6 +295,36 @@ function stanford_landing_page_field_group_info() {
     ),
   );
   $field_groups['group_s_lp_item_content|field_collection_item|field_landing_page_item|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_title_link|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_title_link';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'header_370x170';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Title link',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_s_lp_item_title',
+    ),
+    'format_type' => 'link',
+    'format_settings' => array(
+      'label' => 'Title link',
+      'instance_settings' => array(
+        'link_to' => 'field_s_lp_item_link',
+        'custom_url' => '',
+        'custom_url_normalize' => 0,
+        'target' => 'default',
+        'classes' => 'group-s-lp-title-link field-group-link',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_lp_title_link|field_collection_item|field_landing_page_item|header_370x170'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -597,6 +657,7 @@ function stanford_landing_page_field_group_info() {
   t('Card Style');
   t('Circle Style');
   t('Image Border Style');
+  t('Image link');
   t('Lead text styles');
   t('Link Style');
   t('More LInk Style');
@@ -607,6 +668,7 @@ function stanford_landing_page_field_group_info() {
   t('Side Info');
   t('Title Style');
   t('Title Wrap');
+  t('Title link');
 
   return $field_groups;
 }
