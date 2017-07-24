@@ -56,6 +56,7 @@ function stanford_landing_page_field_default_field_bases() {
         'stanford_4_col_header' => 'Blocks',
         'large_landscape' => 'Cards',
         'stanford_6_col_banner' => 'Checkered',
+        'header_370x170' => 'Postcard Linked',
       ),
       'allowed_values_function' => '',
     ),

@@ -243,12 +243,13 @@ function stanford_landing_page_field_group_info() {
   $field_group->entity_type = 'field_collection_item';
   $field_group->bundle = 'field_landing_page_item';
   $field_group->mode = 'header_370x170';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_s_lp_postcard';
   $field_group->data = array(
     'label' => 'Image link',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_s_lp_item_image',
+      1 => 'group_s_lp_arrow_link',
     ),
     'format_type' => 'link',
     'format_settings' => array(
@@ -258,7 +259,7 @@ function stanford_landing_page_field_group_info() {
         'custom_url' => '',
         'custom_url_normalize' => 0,
         'target' => 'default',
-        'classes' => 'group-s-lp-image-link field-group-link',
+        'classes' => 'postcard-linked-img-container group-s-lp-image-link field-group-link',
       ),
       'formatter' => 'open',
     ),
@@ -299,15 +300,113 @@ function stanford_landing_page_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_s_lp_title_link|field_collection_item|field_landing_page_item|header_370x170';
-  $field_group->group_name = 'group_s_lp_title_link';
+  $field_group->identifier = 'group_s_lp_postcard_body|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_postcard_body';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'header_370x170';
+  $field_group->parent_name = 'group_s_lp_postcard_content';
+  $field_group->data = array(
+    'label' => 'Postcard body',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_s_lp_item_description',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Postcard body',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'postcard-linked-body group-s-lp-postcard-body field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_lp_postcard_body|field_collection_item|field_landing_page_item|header_370x170'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_postcard_content|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_postcard_content';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'header_370x170';
+  $field_group->parent_name = 'group_s_lp_postcard';
+  $field_group->data = array(
+    'label' => 'Postcard Content',
+    'weight' => '2',
+    'children' => array(
+      0 => 'group_s_lp_title_link',
+      1 => 'group_s_lp_postcard_body',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Postcard Content',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'postcard-linked-content-container group-s-lp-postcard-content field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_lp_postcard_content|field_collection_item|field_landing_page_item|header_370x170'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_postcard|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_postcard';
   $field_group->entity_type = 'field_collection_item';
   $field_group->bundle = 'field_landing_page_item';
   $field_group->mode = 'header_370x170';
   $field_group->parent_name = '';
   $field_group->data = array(
+    'label' => 'Postcard',
+    'weight' => '0',
+    'children' => array(
+      0 => 'group_s_lp_image_link',
+      1 => 'group_s_lp_postcard_content',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Postcard',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'postcard-linked-container group-s-lp-postcard field-group-div ',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_lp_postcard|field_collection_item|field_landing_page_item|header_370x170'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_title_link|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_title_link';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'header_370x170';
+  $field_group->parent_name = 'group_s_lp_postcard_content';
+  $field_group->data = array(
     'label' => 'Title link',
-    'weight' => '1',
+    'weight' => '3',
     'children' => array(
       0 => 'field_s_lp_item_title',
     ),
@@ -319,7 +418,7 @@ function stanford_landing_page_field_group_info() {
         'custom_url' => '',
         'custom_url_normalize' => 0,
         'target' => 'default',
-        'classes' => 'group-s-lp-title-link field-group-link',
+        'classes' => 'postcard-linked-title group-s-lp-title-link field-group-link',
       ),
       'formatter' => 'open',
     ),
@@ -665,6 +764,7 @@ function stanford_landing_page_field_group_info() {
   t('Postcard');
   t('Postcard Content');
   t('Postcard Image');
+  t('Postcard body');
   t('Side Info');
   t('Title Style');
   t('Title Wrap');
