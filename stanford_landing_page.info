@@ -95,4 +95,4 @@ features_exclude[dependencies][stanford_soe_helper_landing_page] = stanford_soe_
 features_exclude[field_group][group_lead_text_styles|node|stanford_landing_page|full] = group_lead_text_styles|node|stanford_landing_page|full
 features_exclude[field_instance][field_collection_item-field_landing_page_item-field_s_image_accent_color] = field_collection_item-field_landing_page_item-field_s_image_accent_color
 features_exclude[field_instance][field_collection_item-field_landing_page_item-field_s_title_accent_color] = field_collection_item-field_landing_page_item-field_s_title_accent_color
-project status url = https://github.com/SU-SWS/stanford_landing_page
+project status url = https://github.com/SU-SOE/stanford_landing_page
