@@ -35,7 +35,7 @@ function stanford_landing_page_strongarm() {
         'custom_settings' => TRUE,
       ),
       'stanford_6_col_banner' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'stanford_6_col_banner_short' => array(
         'custom_settings' => FALSE,
@@ -109,13 +109,10 @@ function stanford_landing_page_strongarm() {
       'caw_banner' => array(
         'custom_settings' => FALSE,
       ),
-      'gallery_large' => array(
-        'custom_settings' => FALSE,
+      'header_370x170' => array(
+        'custom_settings' => TRUE,
       ),
-      'gallery_medium' => array(
-        'custom_settings' => FALSE,
-      ),
-      'gallery_small' => array(
+      'print' => array(
         'custom_settings' => FALSE,
       ),
       'stanford_banner_850x400' => array(
@@ -128,6 +125,9 @@ function stanford_landing_page_strongarm() {
         'custom_settings' => FALSE,
       ),
       'stanford_full_width_banner_short' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_fw_banner_tall_caption' => array(
         'custom_settings' => FALSE,
       ),
       'stanford_icon_scaled' => array(
@@ -161,7 +161,7 @@ function stanford_landing_page_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -182,6 +182,18 @@ function stanford_landing_page_strongarm() {
         'custom_settings' => FALSE,
       ),
       'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_extras_single_region' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_news_extras' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_cap' => array(
+        'custom_settings' => FALSE,
+      ),
+      'taxonomy' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -235,7 +247,7 @@ function stanford_landing_page_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_stanford_landing_page';
-  $strongarm->value = '1';
+  $strongarm->value = 0;
   $export['node_preview_stanford_landing_page'] = $strongarm;
 
   $strongarm = new stdClass();

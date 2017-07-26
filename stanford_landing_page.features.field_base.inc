@@ -21,11 +21,15 @@ function stanford_landing_page_field_default_field_bases() {
       'revision_id' => array(
         0 => 'revision_id',
       ),
+      'value' => array(
+        0 => 'value',
+      ),
     ),
     'locked' => 0,
     'module' => 'field_collection',
     'settings' => array(
       'hide_blank_items' => 1,
+      'hide_initial_item' => FALSE,
       'path' => '',
     ),
     'translatable' => 0,
@@ -52,6 +56,7 @@ function stanford_landing_page_field_default_field_bases() {
         'stanford_4_col_header' => 'Blocks',
         'large_landscape' => 'Cards',
         'stanford_6_col_banner' => 'Checkered',
+        'header_370x170' => 'Postcard Linked',
       ),
       'allowed_values_function' => '',
     ),
