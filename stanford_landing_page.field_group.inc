@@ -238,6 +238,35 @@ function stanford_landing_page_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_advanced|field_collection_item|field_landing_page_item|form';
+  $field_group->group_name = 'group_s_lp_advanced';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Advanced',
+    'weight' => '11',
+    'children' => array(
+      0 => 'field_s_lp_icon_image',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Advanced',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'id' => '',
+        'classes' => 'group-s-lp-advanced field-group-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $field_groups['group_s_lp_advanced|field_collection_item|field_landing_page_item|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_lp_arrow_link|field_collection_item|field_landing_page_item|header_370x170';
   $field_group->group_name = 'group_s_lp_arrow_link';
   $field_group->entity_type = 'field_collection_item';
@@ -247,7 +276,9 @@ function stanford_landing_page_field_group_info() {
   $field_group->data = array(
     'label' => 'Arrow link',
     'weight' => '3',
-    'children' => array(),
+    'children' => array(
+      0 => 'field_s_lp_icon_image',
+    ),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Arrow link',
@@ -309,10 +340,10 @@ function stanford_landing_page_field_group_info() {
     'label' => 'Add/Edit Content',
     'weight' => '1',
     'children' => array(
-      0 => 'field_s_lp_item_description',
-      1 => 'field_s_lp_item_image',
-      2 => 'field_s_lp_item_link',
-      3 => 'field_s_lp_2nd_links',
+      0 => 'field_s_lp_2nd_links',
+      1 => 'field_s_lp_item_description',
+      2 => 'field_s_lp_item_image',
+      3 => 'field_s_lp_item_link',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -781,6 +812,7 @@ function stanford_landing_page_field_group_info() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Add/Edit Content');
+  t('Advanced');
   t('Arrow link');
   t('Block Style');
   t('Card Link Style');
