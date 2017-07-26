@@ -238,6 +238,36 @@ function stanford_landing_page_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_arrow_link|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_arrow_link';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'header_370x170';
+  $field_group->parent_name = 'group_s_lp_image_link';
+  $field_group->data = array(
+    'label' => 'Arrow link',
+    'weight' => '3',
+    'children' => array(),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Arrow link',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'postcard-linked-arrow postcard-linked-arrow-color- group-s-lp-arrow-link field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_lp_arrow_link|field_collection_item|field_landing_page_item|header_370x170'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_lp_image_link|field_collection_item|field_landing_page_item|header_370x170';
   $field_group->group_name = 'group_s_lp_image_link';
   $field_group->entity_type = 'field_collection_item';
@@ -751,6 +781,7 @@ function stanford_landing_page_field_group_info() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Add/Edit Content');
+  t('Arrow link');
   t('Block Style');
   t('Card Link Style');
   t('Card Style');
