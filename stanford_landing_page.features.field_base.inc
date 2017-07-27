@@ -21,11 +21,15 @@ function stanford_landing_page_field_default_field_bases() {
       'revision_id' => array(
         0 => 'revision_id',
       ),
+      'value' => array(
+        0 => 'value',
+      ),
     ),
     'locked' => 0,
     'module' => 'field_collection',
     'settings' => array(
       'hide_blank_items' => 1,
+      'hide_initial_item' => FALSE,
       'path' => '',
     ),
     'translatable' => 0,
@@ -52,6 +56,7 @@ function stanford_landing_page_field_default_field_bases() {
         'stanford_4_col_header' => 'Blocks',
         'large_landscape' => 'Cards',
         'stanford_6_col_banner' => 'Checkered',
+        'header_370x170' => 'Postcard Linked',
       ),
       'allowed_values_function' => '',
     ),
@@ -107,6 +112,28 @@ function stanford_landing_page_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_s_lp_icon_image'.
+  $field_bases['field_s_lp_icon_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_s_lp_icon_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 12637,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
   );
 
   // Exported field_base: 'field_s_lp_item_description'.

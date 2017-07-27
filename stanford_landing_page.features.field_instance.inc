@@ -19,10 +19,16 @@ function stanford_landing_page_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
+        'weight' => 6,
+      ),
+      'header_370x170' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'large_landscape' => array(
@@ -85,7 +91,187 @@ function stanford_landing_page_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_landing_page_item-field_s_lp_icon_image'.
+  $field_instances['field_collection_item-field_landing_page_item-field_s_lp_icon_image'] = array(
+    'bundle' => 'field_landing_page_item',
+    'deleted' => 0,
+    'description' => 'This is the 30 x 30 icon that will display on the image. It uses a default image.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'header_370x170' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'large_landscape' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'stanford_4_col_header' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'stanford_medium_square' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_s_lp_icon_image',
+    'label' => 'Icon Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '500x500',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => 0,
+        'insert_class' => '',
+        'insert_default' => 'auto',
+        'insert_styles' => array(
+          'auto' => 'auto',
+          'colorbox__3-col-header' => 0,
+          'colorbox__4-col-header' => 0,
+          'colorbox__6-col-banner' => 0,
+          'colorbox__6-col-banner-short' => 0,
+          'colorbox__6-col-banner-tall' => 0,
+          'colorbox__6-col-photo-landscape' => 0,
+          'colorbox__8-col-banner' => 0,
+          'colorbox__8-col-banner-short' => 0,
+          'colorbox__8-col-banner-tall' => 0,
+          'colorbox__9-col-banner' => 0,
+          'colorbox__9-col-banner-short' => 0,
+          'colorbox__12-col-banner' => 0,
+          'colorbox__12-col-banner-tall' => 0,
+          'colorbox__banner-850x400' => 0,
+          'colorbox__full-width-banner' => 0,
+          'colorbox__full-width-banner-short' => 0,
+          'colorbox__full_width_banner_shorts_scale_and_crop_1600x400' => 0,
+          'colorbox__full_width_banner_tall' => 0,
+          'colorbox__half-page-profile' => 0,
+          'colorbox__header_370_x_170' => 0,
+          'colorbox__header_scale_850x400' => 0,
+          'colorbox__huge-landscape' => 0,
+          'colorbox__icon-profile' => 0,
+          'colorbox__icon-scaled' => 0,
+          'colorbox__icon-square' => 0,
+          'colorbox__large' => 0,
+          'colorbox__large-landscape' => 0,
+          'colorbox__large-landscape-scaled' => 0,
+          'colorbox__large-profile' => 0,
+          'colorbox__large-profile-scaled' => 0,
+          'colorbox__large-scaled' => 0,
+          'colorbox__large-square' => 0,
+          'colorbox__med-landscape' => 0,
+          'colorbox__med-landscape-scaled' => 0,
+          'colorbox__med-profile' => 0,
+          'colorbox__med-profile-scaled' => 0,
+          'colorbox__med-square' => 0,
+          'colorbox__medium' => 0,
+          'colorbox__page-width' => 0,
+          'colorbox__sm-landscape' => 0,
+          'colorbox__sm-landscape-scaled' => 0,
+          'colorbox__sm-profile' => 0,
+          'colorbox__sm-profile-scaled' => 0,
+          'colorbox__sm-scaled' => 0,
+          'colorbox__sm-square' => 0,
+          'colorbox__square_370_x_370' => 0,
+          'colorbox__thmb-landscape' => 0,
+          'colorbox__thmb-profile' => 0,
+          'colorbox__thmb-square' => 0,
+          'colorbox__thumbnail' => 0,
+          'icon_link' => 0,
+          'image' => 0,
+          'image_3-col-header' => 0,
+          'image_4-col-header' => 0,
+          'image_6-col-banner' => 0,
+          'image_6-col-banner-short' => 0,
+          'image_6-col-banner-tall' => 0,
+          'image_6-col-photo-landscape' => 0,
+          'image_8-col-banner' => 0,
+          'image_8-col-banner-short' => 0,
+          'image_8-col-banner-tall' => 0,
+          'image_9-col-banner' => 0,
+          'image_9-col-banner-short' => 0,
+          'image_12-col-banner' => 0,
+          'image_12-col-banner-tall' => 0,
+          'image_banner-850x400' => 0,
+          'image_full-width-banner' => 0,
+          'image_full-width-banner-short' => 0,
+          'image_full_width_banner_shorts_scale_and_crop_1600x400' => 0,
+          'image_full_width_banner_tall' => 0,
+          'image_half-page-profile' => 0,
+          'image_header_370_x_170' => 0,
+          'image_header_scale_850x400' => 0,
+          'image_huge-landscape' => 0,
+          'image_icon-profile' => 0,
+          'image_icon-scaled' => 0,
+          'image_icon-square' => 0,
+          'image_large' => 0,
+          'image_large-landscape' => 0,
+          'image_large-landscape-scaled' => 0,
+          'image_large-profile' => 0,
+          'image_large-profile-scaled' => 0,
+          'image_large-scaled' => 0,
+          'image_large-square' => 0,
+          'image_med-landscape' => 0,
+          'image_med-landscape-scaled' => 0,
+          'image_med-profile' => 0,
+          'image_med-profile-scaled' => 0,
+          'image_med-square' => 0,
+          'image_medium' => 0,
+          'image_page-width' => 0,
+          'image_sm-landscape' => 0,
+          'image_sm-landscape-scaled' => 0,
+          'image_sm-profile' => 0,
+          'image_sm-profile-scaled' => 0,
+          'image_sm-scaled' => 0,
+          'image_sm-square' => 0,
+          'image_square_370_x_370' => 0,
+          'image_thmb-landscape' => 0,
+          'image_thmb-profile' => 0,
+          'image_thmb-square' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
+        ),
+        'insert_width' => '',
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 3,
     ),
   );
 
@@ -102,7 +288,14 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 4,
+      ),
+      'header_370x170' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
       ),
       'large_landscape' => array(
         'label' => 'hidden',
@@ -209,7 +402,7 @@ function stanford_landing_page_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -228,7 +421,17 @@ function stanford_landing_page_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 3,
+      ),
+      'header_370x170' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'header_370_x_170',
+        ),
+        'type' => 'image',
+        'weight' => 7,
       ),
       'large_landscape' => array(
         'label' => 'hidden',
@@ -401,6 +604,12 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
+        'weight' => 5,
+      ),
+      'header_370x170' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'large_landscape' => array(
@@ -497,7 +706,7 @@ function stanford_landing_page_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -514,7 +723,14 @@ function stanford_landing_page_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
+      ),
+      'header_370x170' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
       ),
       'large_landscape' => array(
         'label' => 'hidden',
@@ -647,6 +863,13 @@ function stanford_landing_page_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -694,6 +917,15 @@ function stanford_landing_page_field_default_field_instances() {
         'type' => 'field_collection_fields',
         'weight' => 3,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'view_mode' => 'stanford_medium_square',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -725,6 +957,19 @@ function stanford_landing_page_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => '',
+          'delete' => '',
+          'description' => 0,
+          'edit' => '',
+          'view_mode' => 'stanford_12_col_banner',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 0,
+      ),
+      'full' => array(
         'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
@@ -778,6 +1023,12 @@ function stanford_landing_page_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 4,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -796,7 +1047,9 @@ function stanford_landing_page_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 1,
     ),
@@ -811,6 +1064,13 @@ function stanford_landing_page_field_default_field_instances() {
     'description' => 'Enter a short lead sentence for this landing page. The maximum length of characters in this field is 255.',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -879,6 +1139,7 @@ function stanford_landing_page_field_default_field_instances() {
   t('Description');
   t('Enter URL link to location for this landing page item. This is used as the main link for the cards layout and the first link in a list of links.');
   t('Enter a short lead sentence for this landing page. The maximum length of characters in this field is 255.');
+  t('Icon Image');
   t('Image');
   t('Landing Page Item');
   t('Layout');
@@ -886,6 +1147,7 @@ function stanford_landing_page_field_default_field_instances() {
   t('Primary Link');
   t('Secondary Links');
   t('Select the layout you want to use for this Landing Page.');
+  t('This is the 30 x 30 icon that will display on the image. It uses a default image.');
   t('Title');
 
   return $field_instances;
