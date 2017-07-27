@@ -431,7 +431,7 @@ function stanford_landing_page_field_default_field_instances() {
           'image_style' => 'header_370_x_170',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 7,
       ),
       'large_landscape' => array(
         'label' => 'hidden',

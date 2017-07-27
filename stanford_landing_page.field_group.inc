@@ -272,10 +272,10 @@ function stanford_landing_page_field_group_info() {
   $field_group->entity_type = 'field_collection_item';
   $field_group->bundle = 'field_landing_page_item';
   $field_group->mode = 'header_370x170';
-  $field_group->parent_name = 'group_s_lp_image_link';
+  $field_group->parent_name = 'group_s_lp_image_container';
   $field_group->data = array(
     'label' => 'Arrow link',
-    'weight' => '3',
+    'weight' => '8',
     'children' => array(
       0 => 'field_s_lp_icon_image',
     ),
@@ -299,6 +299,39 @@ function stanford_landing_page_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_lp_image_container|field_collection_item|field_landing_page_item|header_370x170';
+  $field_group->group_name = 'group_s_lp_image_container';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_landing_page_item';
+  $field_group->mode = 'header_370x170';
+  $field_group->parent_name = 'group_s_lp_image_link';
+  $field_group->data = array(
+    'label' => 'Image Container',
+    'weight' => '6',
+    'children' => array(
+      0 => 'field_s_lp_item_image',
+      1 => 'group_s_lp_arrow_link',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Image Container',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'postcard-linked-img group-s-lp-image-container field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_s_lp_image_container|field_collection_item|field_landing_page_item|header_370x170'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_s_lp_image_link|field_collection_item|field_landing_page_item|header_370x170';
   $field_group->group_name = 'group_s_lp_image_link';
   $field_group->entity_type = 'field_collection_item';
@@ -309,8 +342,7 @@ function stanford_landing_page_field_group_info() {
     'label' => 'Image link',
     'weight' => '1',
     'children' => array(
-      0 => 'field_s_lp_item_image',
-      1 => 'group_s_lp_arrow_link',
+      0 => 'group_s_lp_image_container',
     ),
     'format_type' => 'link',
     'format_settings' => array(
@@ -369,7 +401,7 @@ function stanford_landing_page_field_group_info() {
   $field_group->parent_name = 'group_s_lp_postcard_content';
   $field_group->data = array(
     'label' => 'Postcard body',
-    'weight' => '4',
+    'weight' => '8',
     'children' => array(
       0 => 'field_s_lp_item_description',
     ),
@@ -467,7 +499,7 @@ function stanford_landing_page_field_group_info() {
   $field_group->parent_name = 'group_s_lp_postcard_content';
   $field_group->data = array(
     'label' => 'Title link',
-    'weight' => '3',
+    'weight' => '7',
     'children' => array(
       0 => 'field_s_lp_item_title',
     ),
@@ -819,6 +851,7 @@ function stanford_landing_page_field_group_info() {
   t('Card Style');
   t('Circle Style');
   t('Image Border Style');
+  t('Image Container');
   t('Image link');
   t('Lead text styles');
   t('Link Style');

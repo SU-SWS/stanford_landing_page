@@ -54,6 +54,7 @@ features[field_group][] = group_s_block_style|field_collection_item|field_landin
 features[field_group][] = group_s_block_title_style|field_collection_item|field_landing_page_item|stanford_blocks
 features[field_group][] = group_s_lp_advanced|field_collection_item|field_landing_page_item|form
 features[field_group][] = group_s_lp_arrow_link|field_collection_item|field_landing_page_item|header_370x170
+features[field_group][] = group_s_lp_image_container|field_collection_item|field_landing_page_item|header_370x170
 features[field_group][] = group_s_lp_image_link|field_collection_item|field_landing_page_item|header_370x170
 features[field_group][] = group_s_lp_item_content|field_collection_item|field_landing_page_item|form
 features[field_group][] = group_s_lp_postcard_body|field_collection_item|field_landing_page_item|header_370x170
