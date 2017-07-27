@@ -284,7 +284,7 @@ function stanford_landing_page_field_group_info() {
       'label' => 'Arrow link',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'postcard-linked-arrow postcard-linked-arrow-color- group-s-lp-arrow-link field-group-div',
+        'classes' => 'postcard-linked-arrow group-s-lp-arrow-link field-group-div',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
