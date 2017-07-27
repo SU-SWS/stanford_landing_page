@@ -33,7 +33,7 @@ function stanford_landing_page_preprocess_entity(&$vars) {
     if (isset($vars['elements']['#entity']->field_s_arrow_accent_color[LANGUAGE_NONE][0]['tid'])) {
       $tid = $vars['elements']['#entity']->field_s_arrow_accent_color[LANGUAGE_NONE][0]['tid'];
       $term = taxonomy_term_load($tid);
-      $vars['classes_array'][] = 'postcard-linked-arrow-color-' . $term->name;
+      $vars['classes_array'][] = 'postcard-linked-arrow-color-' . drupal_clean_css_identifier($term->name);
     }
   }
 }
